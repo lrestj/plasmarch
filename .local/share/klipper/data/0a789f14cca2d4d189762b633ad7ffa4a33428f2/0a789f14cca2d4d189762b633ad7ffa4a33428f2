@@ -1,5 +1,0 @@
-pacman-key --init
-pacman-key --add - <<< "${key}"
-pacman-key --lsign-key "${fingerprint}"
-
-pacman -Sy home_paul4us_Arch/klassy

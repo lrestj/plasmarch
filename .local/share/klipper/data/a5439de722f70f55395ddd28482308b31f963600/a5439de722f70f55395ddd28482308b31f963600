@@ -1,2 +1,0 @@
-key=$(curl -fsSL https://download.opensuse.org/repositories/home:paul4us/Arch/$(uname -m)/home_paul4us_Arch.key)
-fingerprint=$(gpg --quiet --with-colons --import-options show-only --import --fingerprint <<< "${key}" | awk -F: '$1 == "fpr" { print $10 }')

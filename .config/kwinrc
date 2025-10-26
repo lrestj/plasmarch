@@ -1,6 +1,8 @@
 [Desktops]
 Id_1=a6c2f18c-03f1-4002-b9fe-71811653d55f
-Number=1
+Id_2=122273fe-25f4-41cc-8dea-c0b6cb4292cd
+Id_3=66ba8275-6448-412c-8209-4c2fe7854a19
+Number=3
 Rows=1
 
 [NightColor]
@@ -9,7 +11,12 @@ Mode=Constant
 NightTemperature=5000
 
 [Plugins]
+desktopchangeosdEnabled=true
 krohnkiteEnabled=true
+slideEnabled=false
+
+[Script-desktopchangeosd]
+PopupHideDelay=500
 
 [Script-krohnkite]
 columnsLayoutOrder=0
@@ -27,8 +34,20 @@ threeColumnLayoutOrder=0
 [Tiling]
 padding=4
 
+[Tiling][122273fe-25f4-41cc-8dea-c0b6cb4292cd][8cd8eecf-cd18-4a1b-9657-cf0cf03a6526]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][66ba8275-6448-412c-8209-4c2fe7854a19][8cd8eecf-cd18-4a1b-9657-cf0cf03a6526]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][a6c2f18c-03f1-4002-b9fe-71811653d55f][8cd8eecf-cd18-4a1b-9657-cf0cf03a6526]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25286458333333334},{"width":0.25286458333333334},{"width":0.24427083333333333},{"width":0.25}]}
+
+[Tiling][fa60e460-f7b8-407c-b8e6-12e37f557243][8cd8eecf-cd18-4a1b-9657-cf0cf03a6526]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Windows]
+RollOverDesktops=true
 
 [Xwayland]
 Scale=1

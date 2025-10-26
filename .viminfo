@@ -12,7 +12,7 @@
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
 :wq
-|2,0,1761498930,,"wq"
+|2,0,1761517627,,"wq"
 :registers
 |2,0,1761496378,,"registers"
 :W
@@ -38,68 +38,255 @@
 	abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 	
 |3,0,0,1,7,0,1761491819,"abbr reb \"reboot\"","abbr in 'sudo pacman -S'","abbr rem 'sudo pacman -Rns'","abbr clean 'sudo paccache -rk 2'","abbr reb 'systemctl reboot'","abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'",""
-"1	LINE	0
-	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
-|3,0,1,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
-"2	LINE	0
-	
-|3,0,2,1,1,0,1761491830,""
+""1	BLOCK	7
+		
+		
+		
+		
+		
+		
+|3,1,1,2,6,7,1761517624,"	","	","	","	","	","	"
+"2	BLOCK	7
+		
+		
+		
+		
+		
+		
+		
+|3,0,2,2,7,7,1761517202,"	","	","	","	","	","	","	"
 "3	LINE	0
+	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
+|3,0,3,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
+"4	LINE	0
+	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
+|3,0,4,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1761491830,""
+"6	LINE	0
 	abbr clean "sudo nix-collect-garbage"
 	abbr reb "reboot"
 	abbr in "sudo pacman -S"
-|3,0,3,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
-"4	LINE	0
-	abbr sudo "sudo"
-|3,0,4,1,1,0,1761409798,"abbr sudo \"sudo\""
-"5	LINE	0
-	abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
-|3,0,5,1,1,0,1761401565,"abbr hpp \"NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'\""
-"6	LINE	0
-	
-|3,0,6,1,1,0,1761401564,""
+|3,0,6,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
 "7	LINE	0
-	abbr makecurrent "sudo /run/current-system/bin/switch-to-configuration boot"
-|3,0,7,1,1,0,1761401562,"abbr makecurrent \"sudo /run/current-system/bin/switch-to-configuration boot\""
+	abbr sudo "sudo"
+|3,0,7,1,1,0,1761409798,"abbr sudo \"sudo\""
 "8	LINE	0
-	abbr delgen "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
-|3,0,8,1,1,0,1761401561,"abbr delgen \"sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations\""
+	abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
+|3,0,8,1,1,0,1761401565,"abbr hpp \"NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'\""
 "9	LINE	0
-	abbr lsdel ".dotfiles/scripts/genlist.sh"
-|3,0,9,1,1,0,1761401560,"abbr lsdel \".dotfiles/scripts/genlist.sh\""
+	
+|3,0,9,1,1,0,1761401564,""
 "-	CHAR	0
-	apt
-|3,0,36,0,1,0,1761409843,"apt"
+	 && git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push gitlab main"
+|3,0,36,0,1,0,1761499529," && git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push gitlab main\""
 
 # Souborové značky:
-'0  1  0  ~/.config/fish/config.fish
-|4,48,1,0,1761499022,"~/.config/fish/config.fish"
-'1  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,49,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
-'2  12  0  ~/endos/.config/fish/config.fish
-|4,50,12,0,1761491849,"~/endos/.config/fish/config.fish"
-'3  1  0  ~/.config/fish/config.fish
-|4,51,1,0,1761491682,"~/.config/fish/config.fish"
-'4  1  0  ~/.config/fish/config.fish
-|4,52,1,0,1761491682,"~/.config/fish/config.fish"
-'5  1  0  ~/.config/fish/config.fish
-|4,53,1,0,1761491682,"~/.config/fish/config.fish"
-'6  1  0  ~/.local/bin/pokus
-|4,54,1,0,1761491415,"~/.local/bin/pokus"
-'7  10  13  /var/tmp/environment.Dy22B3Bw
-|4,55,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
-'8  10  0  /etc/environment
-|4,56,10,0,1761491233,"/etc/environment"
-'9  18  34  /var/tmp/profile.GV54bfs8
-|4,57,18,34,1761489790,"/var/tmp/profile.GV54bfs8"
+'0  27  0  ~/.gitignore
+|4,48,27,0,1761517627,"~/.gitignore"
+'1  18  0  ~/.gitignore
+|4,49,18,0,1761517207,"~/.gitignore"
+'2  18  0  ~/.gitignore
+|4,50,18,0,1761517207,"~/.gitignore"
+'3  25  89  ~/.config/fish/config.fish
+|4,51,25,89,1761499652,"~/.config/fish/config.fish"
+'4  27  0  ~/.config/fish/config.fish
+|4,52,27,0,1761499593,"~/.config/fish/config.fish"
+'5  27  0  ~/.config/fish/config.fish
+|4,53,27,0,1761499593,"~/.config/fish/config.fish"
+'6  1  0  ~/.config/fish/config.fish
+|4,54,1,0,1761499022,"~/.config/fish/config.fish"
+'7  1  0  ~/.config/fish/config.fish
+|4,55,1,0,1761499022,"~/.config/fish/config.fish"
+'8  1  0  ~/.config/fish/config.fish
+|4,56,1,0,1761499022,"~/.config/fish/config.fish"
+'9  1  0  ~/.config/fish/config.fish
+|4,57,1,0,1761499022,"~/.config/fish/config.fish"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517171,"~/.gitignore"
+-'  25  89  ~/.config/fish/config.fish
+|4,39,25,89,1761499652,"~/.config/fish/config.fish"
+-'  25  89  ~/.config/fish/config.fish
+|4,39,25,89,1761499652,"~/.config/fish/config.fish"
+-'  25  89  ~/.config/fish/config.fish
+|4,39,25,89,1761499652,"~/.config/fish/config.fish"
+-'  25  89  ~/.config/fish/config.fish
+|4,39,25,89,1761499652,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499634,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499634,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499634,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499634,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  27  0  ~/.config/fish/config.fish
+|4,39,27,0,1761499593,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499520,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499520,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499520,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499520,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499022,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499022,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499022,"~/.config/fish/config.fish"
 -'  1  0  ~/.config/fish/config.fish
 |4,39,1,0,1761499022,"~/.config/fish/config.fish"
 -'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
 |4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
 -'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
 |4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
 |4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
@@ -118,194 +305,32 @@
 |4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
 -'  12  0  ~/endos/.config/fish/config.fish
 |4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/endos/.config/fish/config.fish
-|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761491682,"~/.config/fish/config.fish"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  1  0  ~/.local/bin/pokus
-|4,39,1,0,1761491415,"~/.local/bin/pokus"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
 
+> ~/.gitignore
+	*	1761517624	0
+	"	27	0
+	^	27	0
+	.	27	0
+	+	24	10
+	+	18	0
+	+	32	42
+	+	27	0
+
 > ~/.config/fish/config.fish
-	*	1761498943	0
-	"	1	0
-	.	13	0
+	*	1761499651	0
+	"	25	89
+	^	25	90
+	.	25	89
 	+	12	0
 	+	13	0
 	+	13	26
 	+	10	0
 	+	13	0
+	+	25	89
+	+	27	0
+	+	25	89
 
 > ~/endos/.dotfiles/scripts/installeos.sh
 	*	1761498926	0
