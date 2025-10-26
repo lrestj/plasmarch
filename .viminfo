@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
+:wq
+|2,0,1761498930,,"wq"
 :registers
 |2,0,1761496378,,"registers"
-:wq
-|2,0,1761491847,,"wq"
 :W
 |2,0,1761489511,,"W"
 :PlugInstall
@@ -38,62 +38,72 @@
 	abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 	
 |3,0,0,1,7,0,1761491819,"abbr reb \"reboot\"","abbr in 'sudo pacman -S'","abbr rem 'sudo pacman -Rns'","abbr clean 'sudo paccache -rk 2'","abbr reb 'systemctl reboot'","abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'",""
-""1	LINE	0
-	
-|3,1,1,1,1,0,1761491830,""
+"1	LINE	0
+	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
+|3,0,1,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
 "2	LINE	0
+	
+|3,0,2,1,1,0,1761491830,""
+"3	LINE	0
 	abbr clean "sudo nix-collect-garbage"
 	abbr reb "reboot"
 	abbr in "sudo pacman -S"
-|3,0,2,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
-"3	LINE	0
-	abbr sudo "sudo"
-|3,0,3,1,1,0,1761409798,"abbr sudo \"sudo\""
+|3,0,3,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
 "4	LINE	0
-	abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
-|3,0,4,1,1,0,1761401565,"abbr hpp \"NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'\""
+	abbr sudo "sudo"
+|3,0,4,1,1,0,1761409798,"abbr sudo \"sudo\""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1761401564,""
+	abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
+|3,0,5,1,1,0,1761401565,"abbr hpp \"NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'\""
 "6	LINE	0
-	abbr makecurrent "sudo /run/current-system/bin/switch-to-configuration boot"
-|3,0,6,1,1,0,1761401562,"abbr makecurrent \"sudo /run/current-system/bin/switch-to-configuration boot\""
+	
+|3,0,6,1,1,0,1761401564,""
 "7	LINE	0
-	abbr delgen "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
-|3,0,7,1,1,0,1761401561,"abbr delgen \"sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations\""
+	abbr makecurrent "sudo /run/current-system/bin/switch-to-configuration boot"
+|3,0,7,1,1,0,1761401562,"abbr makecurrent \"sudo /run/current-system/bin/switch-to-configuration boot\""
 "8	LINE	0
-	abbr lsdel ".dotfiles/scripts/genlist.sh"
-|3,0,8,1,1,0,1761401560,"abbr lsdel \".dotfiles/scripts/genlist.sh\""
+	abbr delgen "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
+|3,0,8,1,1,0,1761401561,"abbr delgen \"sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations\""
 "9	LINE	0
-	abbr lsgen "sudo nix-env -p /nix/var/nix/profiles/system --list-generations"
-|3,0,9,1,1,0,1761401559,"abbr lsgen \"sudo nix-env -p /nix/var/nix/profiles/system --list-generations\""
+	abbr lsdel ".dotfiles/scripts/genlist.sh"
+|3,0,9,1,1,0,1761401560,"abbr lsdel \".dotfiles/scripts/genlist.sh\""
 "-	CHAR	0
 	apt
 |3,0,36,0,1,0,1761409843,"apt"
 
 # Souborové značky:
-'0  12  0  ~/endos/.config/fish/config.fish
-|4,48,12,0,1761491849,"~/endos/.config/fish/config.fish"
-'1  1  0  ~/.config/fish/config.fish
-|4,49,1,0,1761491682,"~/.config/fish/config.fish"
-'2  1  0  ~/.config/fish/config.fish
-|4,50,1,0,1761491682,"~/.config/fish/config.fish"
-'3  1  0  ~/.local/bin/pokus
-|4,51,1,0,1761491415,"~/.local/bin/pokus"
-'4  10  13  /var/tmp/environment.Dy22B3Bw
-|4,52,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
-'5  10  0  /etc/environment
-|4,53,10,0,1761491233,"/etc/environment"
-'6  18  34  /var/tmp/profile.GV54bfs8
-|4,54,18,34,1761489790,"/var/tmp/profile.GV54bfs8"
-'7  18  0  /etc/profile
-|4,55,18,0,1761489551,"/etc/profile"
-'8  17  0  /etc/fstab
-|4,56,17,0,1761487754,"/etc/fstab"
-'9  63  1  ~/.config/yazi/init.lua
-|4,57,63,1,1761484613,"~/.config/yazi/init.lua"
+'0  1  0  ~/.config/fish/config.fish
+|4,48,1,0,1761499022,"~/.config/fish/config.fish"
+'1  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,49,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+'2  12  0  ~/endos/.config/fish/config.fish
+|4,50,12,0,1761491849,"~/endos/.config/fish/config.fish"
+'3  1  0  ~/.config/fish/config.fish
+|4,51,1,0,1761491682,"~/.config/fish/config.fish"
+'4  1  0  ~/.config/fish/config.fish
+|4,52,1,0,1761491682,"~/.config/fish/config.fish"
+'5  1  0  ~/.config/fish/config.fish
+|4,53,1,0,1761491682,"~/.config/fish/config.fish"
+'6  1  0  ~/.local/bin/pokus
+|4,54,1,0,1761491415,"~/.local/bin/pokus"
+'7  10  13  /var/tmp/environment.Dy22B3Bw
+|4,55,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
+'8  10  0  /etc/environment
+|4,56,10,0,1761491233,"/etc/environment"
+'9  18  34  /var/tmp/profile.GV54bfs8
+|4,57,18,34,1761489790,"/var/tmp/profile.GV54bfs8"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761499022,"~/.config/fish/config.fish"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
 -'  12  0  ~/endos/.config/fish/config.fish
 |4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
 -'  12  0  ~/endos/.config/fish/config.fish
@@ -102,6 +112,54 @@
 |4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
 -'  12  0  ~/endos/.config/fish/config.fish
 |4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  12  0  ~/endos/.config/fish/config.fish
+|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
+-'  1  0  ~/endos/.config/fish/config.fish
+|4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
 -'  1  0  ~/endos/.config/fish/config.fish
 |4,39,1,0,1761491717,"~/endos/.config/fish/config.fish"
 -'  1  0  ~/endos/.config/fish/config.fish
@@ -126,6 +184,22 @@
 |4,39,1,0,1761491682,"~/.config/fish/config.fish"
 -'  1  0  ~/.config/fish/config.fish
 |4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761491682,"~/.config/fish/config.fish"
 -'  1  0  ~/.local/bin/pokus
 |4,39,1,0,1761491415,"~/.local/bin/pokus"
 -'  1  0  ~/.local/bin/pokus
@@ -158,156 +232,92 @@
 |4,39,1,0,1761491415,"~/.local/bin/pokus"
 -'  1  0  ~/.local/bin/pokus
 |4,39,1,0,1761491415,"~/.local/bin/pokus"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  10  13  /var/tmp/environment.Dy22B3Bw
-|4,39,10,13,1761491288,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  1  0  /var/tmp/environment.Dy22B3Bw
-|4,39,1,0,1761491248,"/var/tmp/environment.Dy22B3Bw"
--'  10  0  /etc/environment
-|4,39,10,0,1761491233,"/etc/environment"
--'  10  0  /etc/environment
-|4,39,10,0,1761491233,"/etc/environment"
--'  10  0  /etc/environment
-|4,39,10,0,1761491233,"/etc/environment"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
+-'  1  0  ~/.local/bin/pokus
+|4,39,1,0,1761491415,"~/.local/bin/pokus"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
 
-> ~/endos/.config/fish/config.fish
-	*	1761491847	0
-	"	12	0
-
 > ~/.config/fish/config.fish
-	*	1761491830	0
-	"	13	0
+	*	1761498943	0
+	"	1	0
 	.	13	0
 	+	12	0
 	+	13	0
 	+	13	26
 	+	10	0
 	+	13	0
+
+> ~/endos/.dotfiles/scripts/installeos.sh
+	*	1761498926	0
+	"	84	22
+	^	75	109
+	.	76	0
+	+	75	108
+	+	76	0
+
+> ~/endos/.config/fish/config.fish
+	*	1761491847	0
+	"	12	0
 
 > ~/.local/bin/pokus
 	*	1761491404	0

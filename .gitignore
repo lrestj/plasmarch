@@ -12,3 +12,5 @@ nixos/
 .local/share/klipper/
 .local/state/yazi/packages/
 .local/share/klipper/
+.ssh/
+.config/vim/undodir/
