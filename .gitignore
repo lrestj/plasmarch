@@ -1,0 +1,14 @@
+.config/BraveSoftware/
+Obrázky/
+Dokumenty/
+Plocha/
+endos/
+nixos/
+.mozilla/
+.config/yazi/plugins/
+.config/vim/plugged/
+.cfg.git/
+.cache/
+.local/share/klipper/
+.local/state/yazi/packages/
+.local/share/klipper/

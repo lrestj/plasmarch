@@ -1,0 +1,15 @@
+[Document 0]
+URL=file:///home/libor/.local/share/applications/vim.desktop
+
+[MainWindow0 Settings]
+WindowState=8
+
+[Open Documents]
+Count=1
+
+[Open MainWindows]
+Count=1
+
+[Recent Files]
+File1[$e]=$HOME/.local/share/applications/vim.desktop
+Name1[$e]=vim.desktop

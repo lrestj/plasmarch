@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="112">
+  <name>Oxygen Dark</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>feren-os-team</author>
+  <homepage>https://store.kde.org/p/2066753</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>64</rating>
+  <downloads>4839</downloads>
+  <installedfile>/home/libor/.local/share/color-schemes/OxygenDark.colors</installedfile>
+  <id>2066753</id>
+  <releasedate>2023-07-27</releasedate>
+  <summary>&lt;p>An unofficial dark theme counterpart to the famous Oxygen colour scheme.&lt;br />&lt;br />This colour scheme takes the existing Oxygen colour scheme and gives it the lightness inversion treatment, with some extra design considerations taken atop to make Oxygen better reflect how its developers at the time would have likely designed a dark theme counterpart of the Oxygen colour scheme.&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/36/03/59/2066753/screenshot-20230727-211605.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/36/03/59/2066753/screenshot-20230727-211605.png</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTY5MDQ5MTUzOSwibyI6IjEiLCJzIjoiNDU1YzY4NTVhZDhiNWZjNmIwODIwOTZlNGI0MjYxMmI0YmZiMjgxMjQ1YTMxYTQ1YzQ5OTljY2QwODdiYzQ5ZDhkMzA3OGU5OGFjNzJlNTBlY2UyMTJlZTgxMDBjMWFlY2JiODVmNjg5MDJmYTkxMmU2MTM5YWFhNGFjNmIxNDciLCJ0IjoxNzYxNDc3Mzg4LCJzdGZwIjpudWxsLCJzdGlwIjoiMTg4LjEyMi4yMjIuMzQifQ.CGfPb11h5g9oz1dCYjqLzF4pLygcUY4Zu2s1KqD0z0M/OxygenDark.colors</payload>
+  <tags>plasma,original-product,oxygen,lgplv2,linux,theme,unix,kde,kde4,dark,colorscheme</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

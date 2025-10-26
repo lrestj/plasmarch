@@ -1,0 +1,15 @@
+[main]
+terminal=foot
+
+[border]
+        radius=8
+[colors]
+        background="#1d2021ff"
+        background="#1d2021ff"
+        text="#fffff0"
+        selection="#3c3836ff"
+        selection-text="#ffffff"
+        match="#83a598ff"
+        selection-match="#ebdbb2ff"
+        border="#fffff0"
+        border="#d79921ff"

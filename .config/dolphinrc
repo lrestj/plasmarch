@@ -1,0 +1,15 @@
+[General]
+CloseActiveSplitView=false
+RememberOpenedTabs=false
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
+UseTabForSwitchingSplitView=true
+Version=202
+ViewPropsTimestamp=2025,10,25,15,9,4.539
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,glycin-heif,djvuthumbnail,gsf-office,kraorathumbnail,mobithumbnail,ebookthumbnail,exrthumbnail,jpegthumbnail,glycin-jxl,opendocumentthumbnail,comicbookthumbnail,ffmpegthumbnailer,heif,glycin-image-rs,glycin-svg,imagethumbnail,windowsimagethumbnail,gsthumbnail,rawthumbnail,directorythumbnail,blenderthumbnail,cursorthumbnail,fontthumbnail,ffmpegthumbs,windowsexethumbnail,svgthumbnail

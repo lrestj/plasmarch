@@ -1,0 +1,15 @@
+[Added Associations]
+application/json=vim.desktop;
+application/x-docbook+xml=vim.desktop;
+application/x-yaml=vim.desktop;
+text/markdown=vim.desktop;
+text/plain=vim.desktop;
+text/x-cmake=vim.desktop;
+
+[Default Applications]
+application/json=vim.desktop;
+application/x-docbook+xml=vim.desktop;
+application/x-yaml=vim.desktop;
+text/markdown=vim.desktop;
+text/plain=vim.desktop;
+text/x-cmake=vim.desktop;

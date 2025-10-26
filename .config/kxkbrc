@@ -1,0 +1,6 @@
+[Layout]
+LayoutList=cz
+Model=pc105
+Options=caps:swapescape
+ResetOldOptions=true
+Use=true

@@ -1,0 +1,24 @@
+{
+    "$fdo_created": "1761398790",
+    "$fdo_modified": "1761400286",
+    "Brave Keys/Brave Safe Storage": {
+        "$fdo_created": "1761399117",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1761399117",
+        "attributes": {
+            "server": "Brave Keys",
+            "type": "plaintext",
+            "user": "Brave Safe Storage",
+            "xdg:schema": "org.qt.keychain"
+        }
+    },
+    "xdg-desktop-portal/org.chromium.Chromium": {
+        "$fdo_created": "1761400286",
+        "$fdo_modified": "1761400286",
+        "attributes": {
+            "server": "xdg-desktop-portal",
+            "type": "binary",
+            "user": "org.chromium.Chromium"
+        }
+    }
+}
