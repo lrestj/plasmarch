@@ -25,7 +25,7 @@ columnsLayoutOrder=0
 floatingLayoutOrder=0
 newWindowPosition=1
 quarterLayoutOrder=0
-screenGapBetween=4
+screenGapBetween=5
 screenGapBottom=2
 screenGapLeft=2
 screenGapRight=2
@@ -34,8 +34,7 @@ spiralLayoutOrder=0
 spreadLayoutOrder=0
 stackedLayoutOrder=0
 stairLayoutOrder=0
-threeColumnLayoutOrder=1
-tileLayoutOrder=0
+threeColumnLayoutOrder=0
 
 [Tiling]
 padding=4
