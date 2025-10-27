@@ -11,8 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
+:w
+|2,0,1761576754,,"w"
 :wq
-|2,0,1761517627,,"wq"
+|2,0,1761576363,,"wq"
 :registers
 |2,0,1761496378,,"registers"
 :W
@@ -30,22 +32,24 @@
 
 # Registry:
 "0	LINE	0
-	abbr reb "reboot"
-	abbr in 'sudo pacman -S'
-	abbr rem 'sudo pacman -Rns'
-	abbr clean 'sudo paccache -rk 2'
-	abbr reb 'systemctl reboot'
-	abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
+	echo "Synology nfs shares"
+	echo -e "\n"
+	sudo mkdir /nfs &&
+	sudo chmod -R ugo+rwx /nfs
+	sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/
+	sudo systemctl enable autofs.service
+	echo -e "\n"
+	echo "Připojení Nas Synology proběhlo úspěšně"
+	echo -e "\n"
+	sleep 4
+|3,0,0,1,10,0,1761576478,"echo \"Synology nfs shares\"","echo -e \"\\n\"","sudo mkdir /nfs &&","sudo chmod -R ugo+rwx /nfs","sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/","sudo systemctl enable autofs.service","echo -e \"\\n\"","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo -e \"\\n\"","sleep 4"
+"1	LINE	0
+	#Greetd greeter
+	echo "Nastavuji Greetd"
+	sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/
+	sudo systemctl enable greetd.service
 	
-|3,0,0,1,7,0,1761491819,"abbr reb \"reboot\"","abbr in 'sudo pacman -S'","abbr rem 'sudo pacman -Rns'","abbr clean 'sudo paccache -rk 2'","abbr reb 'systemctl reboot'","abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'",""
-""1	BLOCK	7
-		
-		
-		
-		
-		
-		
-|3,1,1,2,6,7,1761517624,"	","	","	","	","	","	"
+|3,0,1,1,5,0,1761576211,"#Greetd greeter","echo \"Nastavuji Greetd\"","sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/","sudo systemctl enable greetd.service",""
 "2	BLOCK	7
 		
 		
@@ -53,260 +57,300 @@
 		
 		
 		
+|3,0,2,2,6,7,1761517624,"	","	","	","	","	","	"
+"3	BLOCK	7
 		
-|3,0,2,2,7,7,1761517202,"	","	","	","	","	","	","	"
-"3	LINE	0
-	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
-|3,0,3,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
+		
+		
+		
+		
+		
+		
+|3,0,3,2,7,7,1761517202,"	","	","	","	","	","	","	"
 "4	LINE	0
-	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
-|3,0,4,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
+	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
+|3,0,4,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1761491830,""
+	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
+|3,0,5,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
 "6	LINE	0
+	
+|3,0,6,1,1,0,1761491830,""
+"7	LINE	0
 	abbr clean "sudo nix-collect-garbage"
 	abbr reb "reboot"
 	abbr in "sudo pacman -S"
-|3,0,6,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
-"7	LINE	0
-	abbr sudo "sudo"
-|3,0,7,1,1,0,1761409798,"abbr sudo \"sudo\""
+|3,0,7,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
 "8	LINE	0
-	abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
-|3,0,8,1,1,0,1761401565,"abbr hpp \"NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'\""
+	abbr sudo "sudo"
+|3,0,8,1,1,0,1761409798,"abbr sudo \"sudo\""
 "9	LINE	0
-	
-|3,0,9,1,1,0,1761401564,""
+	abbr hpp "NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'"
+|3,0,9,1,1,0,1761401565,"abbr hpp \"NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'\""
 "-	CHAR	0
-	 && git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push gitlab main"
-|3,0,36,0,1,0,1761499529," && git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push gitlab main\""
+	whitesur-icon-theme-git 
+|3,0,36,0,1,0,1761576027,"whitesur-icon-theme-git "
 
 # Souborové značky:
-'0  27  0  ~/.gitignore
-|4,48,27,0,1761517627,"~/.gitignore"
-'1  18  0  ~/.gitignore
-|4,49,18,0,1761517207,"~/.gitignore"
-'2  18  0  ~/.gitignore
-|4,50,18,0,1761517207,"~/.gitignore"
-'3  25  89  ~/.config/fish/config.fish
-|4,51,25,89,1761499652,"~/.config/fish/config.fish"
-'4  27  0  ~/.config/fish/config.fish
-|4,52,27,0,1761499593,"~/.config/fish/config.fish"
-'5  27  0  ~/.config/fish/config.fish
-|4,53,27,0,1761499593,"~/.config/fish/config.fish"
-'6  1  0  ~/.config/fish/config.fish
-|4,54,1,0,1761499022,"~/.config/fish/config.fish"
-'7  1  0  ~/.config/fish/config.fish
-|4,55,1,0,1761499022,"~/.config/fish/config.fish"
-'8  1  0  ~/.config/fish/config.fish
-|4,56,1,0,1761499022,"~/.config/fish/config.fish"
-'9  1  0  ~/.config/fish/config.fish
-|4,57,1,0,1761499022,"~/.config/fish/config.fish"
+'0  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,48,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+'1  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,49,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+'2  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
+|4,50,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
+'3  3  0  ~/.local/bin/autofsnfs
+|4,51,3,0,1761576581,"~/.local/bin/autofsnfs"
+'4  42  28  ~/.dotfiles/scripts/installeos.sh
+|4,52,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+'5  42  28  ~/.dotfiles/scripts/installeos.sh
+|4,53,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+'6  27  0  ~/.gitignore
+|4,54,27,0,1761517627,"~/.gitignore"
+'7  18  0  ~/.gitignore
+|4,55,18,0,1761517207,"~/.gitignore"
+'8  18  0  ~/.gitignore
+|4,56,18,0,1761517207,"~/.gitignore"
+'9  25  89  ~/.config/fish/config.fish
+|4,57,25,89,1761499652,"~/.config/fish/config.fish"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761576810,"~/.dotfiles/scripts/installeos.sh"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
+|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
+-'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
+|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
+-'  1  0  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  1  0  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  3  0  ~/.local/bin/autofsnfs
+|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
+-'  3  0  ~/.local/bin/autofsnfs
+|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
+-'  3  0  ~/.local/bin/autofsnfs
+|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
+-'  3  0  ~/.local/bin/autofsnfs
+|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
+-'  3  0  ~/.local/bin/autofsnfs
+|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
+-'  3  0  ~/.local/bin/autofsnfs
+|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
+-'  42  28  ~/.dotfiles/scripts/installeos.sh
+|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+-'  42  28  ~/.dotfiles/scripts/installeos.sh
+|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+-'  42  28  ~/.dotfiles/scripts/installeos.sh
+|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+-'  42  28  ~/.dotfiles/scripts/installeos.sh
+|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.local/bin/autofsnfs
+|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
+-'  1  0  ~/.local/bin/autofsnfs
+|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
+-'  1  0  ~/.local/bin/autofsnfs
+|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
+-'  1  0  ~/.local/bin/autofsnfs
+|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
+-'  1  0  ~/.local/bin/autofsnfs
+|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
+-'  1  0  ~/.local/bin/autofsnfs
+|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
+-'  3  12  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
+-'  3  12  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
+-'  3  12  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
+-'  3  12  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
 -'  27  0  ~/.gitignore
 |4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  27  0  ~/.gitignore
+|4,39,27,0,1761517627,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1761517590,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1761517590,"~/.gitignore"
 -'  18  0  ~/.gitignore
 |4,39,18,0,1761517207,"~/.gitignore"
 -'  18  0  ~/.gitignore
 |4,39,18,0,1761517207,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1761517171,"~/.gitignore"
--'  25  89  ~/.config/fish/config.fish
-|4,39,25,89,1761499652,"~/.config/fish/config.fish"
--'  25  89  ~/.config/fish/config.fish
-|4,39,25,89,1761499652,"~/.config/fish/config.fish"
--'  25  89  ~/.config/fish/config.fish
-|4,39,25,89,1761499652,"~/.config/fish/config.fish"
--'  25  89  ~/.config/fish/config.fish
-|4,39,25,89,1761499652,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499634,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499634,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499634,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499634,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  27  0  ~/.config/fish/config.fish
-|4,39,27,0,1761499593,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499520,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499520,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499520,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499520,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499022,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499022,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499022,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761499022,"~/.config/fish/config.fish"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  84  22  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,84,22,1761498930,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/endos/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761498755,"~/endos/.dotfiles/scripts/installeos.sh"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
--'  12  0  ~/endos/.config/fish/config.fish
-|4,39,12,0,1761491849,"~/endos/.config/fish/config.fish"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
+-'  18  0  ~/.gitignore
+|4,39,18,0,1761517207,"~/.gitignore"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
+
+> ~/.dotfiles/scripts/installeos.sh
+	*	1761576936	0
+	"	30	0
+	^	50	109
+	.	50	108
+	+	3	123
+	+	5	73
+	+	19	51
+	+	41	0
+	+	49	108
+	+	50	108
+
+> /run/media/libor/Ventoy/autofs/auto.nfs
+	*	1761576776	0
+	"	1	0
+
+> /run/media/libor/Ventoy/autofs/auto.master
+	*	1761576754	0
+	"	40	16
+	^	40	17
+	.	40	16
+	+	40	16
+
+> ~/.local/bin/autofsnfs
+	*	1761576565	0
+	"	3	0
+	^	2	0
+	.	3	0
+	+	2	0
+	+	3	0
+
+> ~/endos/.local/bin/installeos.sh
+	*	1761576386	0
+	"	1	0
 
 > ~/.gitignore
 	*	1761517624	0
@@ -447,10 +491,6 @@
 	^	40	17
 	.	40	16
 	+	40	16
-
-> /run/media/libor/Ventoy/autofs/auto.master
-	*	1761410182	0
-	"	18	0
 
 > ~/.local/share/applications/yazi.desktop
 	*	1761401355	0

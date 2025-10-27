@@ -19,17 +19,23 @@ slideEnabled=false
 PopupHideDelay=500
 
 [Script-krohnkite]
+binaryTreeLayoutOrder=0
+cascadeLayoutOrder=0
 columnsLayoutOrder=0
-floatingLayoutOrder=3
+floatingLayoutOrder=0
 newWindowPosition=1
 quarterLayoutOrder=0
-screenGapBetween=1
+screenGapBetween=4
+screenGapBottom=2
 screenGapLeft=2
 screenGapRight=2
+screenGapTop=2
 spiralLayoutOrder=0
 spreadLayoutOrder=0
 stackedLayoutOrder=0
-threeColumnLayoutOrder=0
+stairLayoutOrder=0
+threeColumnLayoutOrder=1
+tileLayoutOrder=0
 
 [Tiling]
 padding=4
