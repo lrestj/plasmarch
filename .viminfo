@@ -12,7 +12,7 @@
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
 :wq
-|2,0,1761579212,,"wq"
+|2,0,1761581236,,"wq"
 :W
 |2,0,1761578930,,"W"
 :w
@@ -52,6 +52,9 @@
 |3,0,0,1,17,0,1761579136,"sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
 |<"echo \"-------------------------------------------------------------------------\"","","","##### END OF FILE #####"
 ""1	LINE	0
+	font_family JetBrainsMono Nerd Font Mono
+|3,1,1,1,1,0,1761580547,"font_family JetBrainsMono Nerd Font Mono"
+"2	LINE	0
 	
 	##### END OF FILE #####
 	echo "Synology nfs shares"
@@ -65,8 +68,8 @@
 	echo -e "\n"
 	sleep 4
 	
-|3,1,1,1,13,0,1761579166,"","##### END OF FILE #####","echo \"Synology nfs shares\"","echo -e \"\\n\"","sudo mkdir /nfs &&","sudo chmod -R ugo+rwx /nfs","sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/","sudo systemctl enable autofs.service","echo -e \"\\n\"","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo -e \"\\n\"","sleep 4",""
-"2	LINE	0
+|3,0,2,1,13,0,1761579166,"","##### END OF FILE #####","echo \"Synology nfs shares\"","echo -e \"\\n\"","sudo mkdir /nfs &&","sudo chmod -R ugo+rwx /nfs","sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/","sudo systemctl enable autofs.service","echo -e \"\\n\"","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo -e \"\\n\"","sleep 4",""
+"3	LINE	0
 	
 	# Synology nfs shares
 	192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0
@@ -74,22 +77,14 @@
 	192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,auto,hard   0 0
 	
 	192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs   users,auto,hard  0 0
-|3,0,2,1,7,0,1761578993,"","# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,auto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs   users,auto,hard  0 0"
-"3	LINE	0
+|3,0,3,1,7,0,1761578993,"","# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,auto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs   users,auto,hard  0 0"
+"4	LINE	0
 	#Greetd greeter
 	echo "Nastavuji Greetd"
 	sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/
 	sudo systemctl enable greetd.service
 	
-|3,0,3,1,5,0,1761576211,"#Greetd greeter","echo \"Nastavuji Greetd\"","sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/","sudo systemctl enable greetd.service",""
-"4	BLOCK	7
-		
-		
-		
-		
-		
-		
-|3,0,4,2,6,7,1761517624,"	","	","	","	","	","	"
+|3,0,4,1,5,0,1761576211,"#Greetd greeter","echo \"Nastavuji Greetd\"","sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/","sudo systemctl enable greetd.service",""
 "5	BLOCK	7
 		
 		
@@ -97,63 +92,208 @@
 		
 		
 		
+|3,0,5,2,6,7,1761517624,"	","	","	","	","	","	"
+"6	BLOCK	7
 		
-|3,0,5,2,7,7,1761517202,"	","	","	","	","	","	","	"
-"6	LINE	0
-	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
-|3,0,6,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
+		
+		
+		
+		
+		
+		
+|3,0,6,2,7,7,1761517202,"	","	","	","	","	","	","	"
 "7	LINE	0
-	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
-|3,0,7,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
+	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
+|3,0,7,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1761491830,""
+	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git
+|3,0,8,1,1,0,1761498852,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add codeberg ssh://git@codeberg.org/lrestj/endos.git"
 "9	LINE	0
-	abbr clean "sudo nix-collect-garbage"
-	abbr reb "reboot"
-	abbr in "sudo pacman -S"
-|3,0,9,1,3,0,1761491800,"abbr clean \"sudo nix-collect-garbage\"","abbr reb \"reboot\"","abbr in \"sudo pacman -S\""
+	
+|3,0,9,1,1,0,1761491830,""
 "-	CHAR	0
 	 
 |3,0,36,0,1,0,1761578870," "
 
 # Souborové značky:
-'0  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
-|4,48,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
-'1  11  0  /etc/fstab
-|4,49,11,0,1761577982,"/etc/fstab"
-'2  45  0  ~/.dotfiles/scripts/installeos.sh
-|4,50,45,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
-'3  30  0  ~/.dotfiles/scripts/installeos.sh
-|4,51,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
-'4  40  16  /run/media/libor/Ventoy/autofs/auto.master
-|4,52,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
-'5  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,53,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
-'6  3  0  ~/.local/bin/autofsnfs
-|4,54,3,0,1761576581,"~/.local/bin/autofsnfs"
-'7  46  28  ~/.dotfiles/scripts/installeos.sh
-|4,55,46,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
-'8  46  28  ~/.dotfiles/scripts/installeos.sh
-|4,56,46,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
-'9  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,57,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
+'0  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,48,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+'1  3  21  ~/.config/kitty/kitty.conf
+|4,49,3,21,1761580855,"~/.config/kitty/kitty.conf"
+'2  3  25  ~/.config/kitty/kitty.conf
+|4,50,3,25,1761580657,"~/.config/kitty/kitty.conf"
+'3  3  34  ~/.config/kitty/kitty.conf
+|4,51,3,34,1761580566,"~/.config/kitty/kitty.conf"
+'4  3  34  ~/.config/kitty/kitty.conf
+|4,52,3,34,1761580566,"~/.config/kitty/kitty.conf"
+'5  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,53,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+'6  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,54,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+'7  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,55,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+'8  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,56,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+'9  11  0  /etc/fstab
+|4,57,11,0,1761577982,"/etc/fstab"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
+-'  3  21  ~/.config/kitty/kitty.conf
+|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
+-'  3  21  ~/.config/kitty/kitty.conf
+|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
+-'  3  25  ~/.config/kitty/kitty.conf
+|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
+-'  3  25  ~/.config/kitty/kitty.conf
+|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
+-'  3  34  ~/.config/kitty/kitty.conf
+|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
+-'  3  34  ~/.config/kitty/kitty.conf
+|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
+-'  4  0  ~/.config/kitty/kitty.conf
+|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  4  0  ~/.config/kitty/kitty.conf
+|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  4  0  ~/.config/kitty/kitty.conf
+|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  4  0  ~/.config/kitty/kitty.conf
+|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  4  0  ~/.config/kitty/kitty.conf
+|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  4  0  ~/.config/kitty/kitty.conf
+|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1761580537,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1761580537,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1761580537,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1761580537,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1761580537,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1761580537,"~/.config/kitty/kitty.conf"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
 -'  29  0  ~/.dotfiles/scripts/2nfs mounts.sh
 |4,39,29,0,1761579212,"~/.dotfiles/scripts/2nfs mounts.sh"
 -'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
 |4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761579060,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  29  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,29,0,1761579055,"~/.dotfiles/scripts/installeos.sh"
+-'  29  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,29,0,1761579055,"~/.dotfiles/scripts/installeos.sh"
+-'  29  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,29,0,1761579055,"~/.dotfiles/scripts/installeos.sh"
+-'  29  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,29,0,1761579055,"~/.dotfiles/scripts/installeos.sh"
 -'  29  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,29,0,1761579055,"~/.dotfiles/scripts/installeos.sh"
 -'  17  0  /etc/fstab
 |4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  17  0  /etc/fstab
+|4,39,17,0,1761578939,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
+-'  11  0  /etc/fstab
+|4,39,11,0,1761577982,"/etc/fstab"
 -'  11  0  /etc/fstab
 |4,39,11,0,1761577982,"/etc/fstab"
 -'  1  0  /etc/fstab
 |4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
+-'  1  0  /etc/fstab
+|4,39,1,0,1761577564,"/etc/fstab"
 -'  1  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,1,0,1761577422,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761577422,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761577422,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761577422,"~/.dotfiles/scripts/installeos.sh"
+-'  45  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,45,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  45  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,45,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  45  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,45,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  45  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,45,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
+-'  30  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,30,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
 -'  45  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,45,0,1761577030,"~/.dotfiles/scripts/installeos.sh"
 -'  30  0  ~/.dotfiles/scripts/installeos.sh
@@ -164,6 +304,10 @@
 |4,39,1,0,1761576810,"~/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,1,0,1761576810,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761576810,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761576810,"~/.dotfiles/scripts/installeos.sh"
 -'  40  16  /run/media/libor/Ventoy/autofs/auto.master
 |4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
 -'  40  16  /run/media/libor/Ventoy/autofs/auto.master
@@ -176,182 +320,32 @@
 |4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
 -'  40  16  /run/media/libor/Ventoy/autofs/auto.master
 |4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.nfs
-|4,39,1,0,1761576780,"/run/media/libor/Ventoy/autofs/auto.nfs"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.master
-|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.master
-|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.master
-|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.master
-|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.master
-|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
--'  1  0  /run/media/libor/Ventoy/autofs/auto.master
-|4,39,1,0,1761576676,"/run/media/libor/Ventoy/autofs/auto.master"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  3  0  ~/.local/bin/autofsnfs
-|4,39,3,0,1761576581,"~/.local/bin/autofsnfs"
--'  46  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,46,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  42  28  ~/.dotfiles/scripts/installeos.sh
-|4,39,42,28,1761576363,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  1  0  ~/.local/bin/autofsnfs
-|4,39,1,0,1761576341,"~/.local/bin/autofsnfs"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  3  12  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,12,1761575767,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761575704,"~/.dotfiles/scripts/installeos.sh"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
--'  27  0  ~/.gitignore
-|4,39,27,0,1761517627,"~/.gitignore"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
+-'  40  16  /run/media/libor/Ventoy/autofs/auto.master
+|4,39,40,16,1761576783,"/run/media/libor/Ventoy/autofs/auto.master"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
 
-> ~/.dotfiles/scripts/2nfs mounts.sh
-	*	1761579202	0
-	"	29	0
-
 > ~/.dotfiles/scripts/installeos.sh
-	*	1761579166	0
-	"	45	0
-	^	54	109
-	.	45	0
+	*	1761581233	0
+	"	3	91
+	^	3	92
+	.	3	91
 	+	3	123
 	+	5	73
 	+	19	51
@@ -360,6 +354,18 @@
 	+	54	108
 	+	30	0
 	+	45	0
+	+	3	91
+
+> ~/.config/kitty/kitty.conf
+	*	1761580853	0
+	"	3	21
+	^	3	22
+	.	3	21
+	+	3	21
+
+> ~/.dotfiles/scripts/2nfs mounts.sh
+	*	1761579202	0
+	"	29	0
 
 > ~/.dotfiles/scripts/3fstabnfs
 	*	1761579025	0

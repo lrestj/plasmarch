@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PacmanApps="nvidia-inst simple-scan ttf-nerd-fonts-symbols ttf-hack-nerd yazi fish btop fastfetch pdfarranger rclone kitty nvidia-settings"
+PacmanApps="nvidia-inst simple-scan ttf-nerd-fonts-symbols ttf-hack-nerd ttf-jetbrains-mono yazi fish btop fastfetch pdfarranger rclone kitty nvidia-settings"
 
 AurApps="banana-cursor bibata-cursor-theme brave-bin fuzzel-git gvim-git xnviewmp"
 
