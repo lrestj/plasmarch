@@ -12,7 +12,7 @@
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
 :wq
-|2,0,1761593809,,"wq"
+|2,0,1761597347,,"wq"
 :W
 |2,0,1761578930,,"W"
 :w
@@ -31,27 +31,10 @@
 # Historie Debug Line (počínaje nejnovější položkou):
 
 # Registry:
-"0	LINE	0
-	sudo cp /etc/fstab /etc/fstab.bak
-	
-	cd ~/.dotfiles/scripts/
-	cat 3fstabnfs | sudo tee -a /etc/fstab
-	echo -e "\n"
-	
-	echo "Připojení Nas Synology proběhlo úspěšně"
-	echo "Soubor fstab nyní vypadá takto:"
-	echo "-------------------------------------------------------------------------"
-	echo -e "\n"
-	cat /etc/fstab
-	
-	echo -e "\n"
-	echo "-------------------------------------------------------------------------"
-	
-	
-	##### END OF FILE #####
-|3,0,0,1,17,0,1761579136,"sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
-|<"echo \"-------------------------------------------------------------------------\"","","","##### END OF FILE #####"
-""1	LINE	0
+""0	CHAR	0
+	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push 
+|3,1,0,0,1,0,1761597295,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push "
+"1	LINE	0
 	#NFS mounts
 	sudo cp /etc/fstab /etc/fstab.bak
 	
@@ -68,7 +51,7 @@
 	echo -e "\n"
 	echo "-------------------------------------------------------------------------"
 	
-|3,1,1,1,16,0,1761593805,"#NFS mounts","sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
+|3,0,1,1,16,0,1761593805,"#NFS mounts","sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
 |<"echo \"-------------------------------------------------------------------------\"",""
 "2	LINE	0
 	# Synology nfs shares
@@ -137,20 +120,20 @@
 |3,0,36,0,1,0,1761578870," "
 
 # Souborové značky:
-'0  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,48,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
-'1  11  0  /var/tmp/fstab.cEJZg4fH
-|4,49,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
-'2  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,50,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+'0  25  168  ~/.config/fish/config.fish
+|4,48,25,168,1761597347,"~/.config/fish/config.fish"
+'1  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,49,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+'2  11  0  /var/tmp/fstab.cEJZg4fH
+|4,50,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
 '3  1  0  /run/media/libor/Ventoy/plasmarch.inst
 |4,51,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
-'4  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,52,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+'4  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,52,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
 '5  33  0  ~/.dotfiles/scripts/installeos.sh
 |4,53,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
-'6  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,54,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+'6  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,54,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
 '7  3  91  ~/.dotfiles/scripts/installeos.sh
 |4,55,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
 '8  3  91  ~/.dotfiles/scripts/installeos.sh
@@ -159,18 +142,38 @@
 |4,57,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761597268,"~/.config/fish/config.fish"
 -'  29  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+-'  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761593791,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761593791,"~/.dotfiles/scripts/plasmarch.inst"
 -'  11  0  /var/tmp/fstab.cEJZg4fH
 |4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
 -'  11  0  /var/tmp/fstab.cEJZg4fH
 |4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
 -'  12  0  /var/tmp/fstab.cEJZg4fH
 |4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
 -'  12  0  /var/tmp/fstab.cEJZg4fH
 |4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
 -'  1  0  /var/tmp/fstab.cEJZg4fH
 |4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
 -'  1  0  /var/tmp/fstab.cEJZg4fH
@@ -183,6 +186,14 @@
 |4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
 -'  1  0  /run/media/libor/Ventoy/plasmarch.inst
 |4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
 -'  33  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
 -'  33  0  ~/.dotfiles/scripts/installeos.sh
@@ -195,6 +206,30 @@
 |4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
 -'  33  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  33  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/.dotfiles/scripts/installeos.sh
@@ -227,6 +262,34 @@
 |4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
 -'  3  91  ~/.dotfiles/scripts/installeos.sh
 |4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  3  91  ~/.dotfiles/scripts/installeos.sh
+|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
 -'  1  0  ~/.dotfiles/scripts/installeos.sh
@@ -271,96 +334,30 @@
 |4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
 -'  3  21  ~/.config/kitty/kitty.conf
 |4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  25  ~/.config/kitty/kitty.conf
-|4,39,3,25,1761580657,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  3  34  ~/.config/kitty/kitty.conf
-|4,39,3,34,1761580566,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
--'  4  0  ~/.config/kitty/kitty.conf
-|4,39,4,0,1761580549,"~/.config/kitty/kitty.conf"
+-'  3  21  ~/.config/kitty/kitty.conf
+|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
+-'  3  21  ~/.config/kitty/kitty.conf
+|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
+-'  3  21  ~/.config/kitty/kitty.conf
+|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
+-'  3  21  ~/.config/kitty/kitty.conf
+|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
+
+> ~/.config/fish/config.fish
+	*	1761597344	0
+	"	25	168
+	^	25	169
+	.	25	168
+	+	12	0
+	+	13	0
+	+	13	26
+	+	10	0
+	+	13	0
+	+	25	89
+	+	27	0
+	+	25	168
 
 > ~/.dotfiles/scripts/plasmarch.inst
 	*	1761593805	0
@@ -454,20 +451,6 @@
 	+	18	0
 	+	32	42
 	+	27	0
-
-> ~/.config/fish/config.fish
-	*	1761499651	0
-	"	25	89
-	^	25	90
-	.	25	89
-	+	12	0
-	+	13	0
-	+	13	26
-	+	10	0
-	+	13	0
-	+	25	89
-	+	27	0
-	+	25	89
 
 > ~/endos/.dotfiles/scripts/installeos.sh
 	*	1761498926	0
