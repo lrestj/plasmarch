@@ -1,0 +1,67 @@
+#!/bin/bash
+
+PacmanApps="nvidia-inst simple-scan ttf-nerd-fonts-symbols ttf-hack-nerd yazi fish btop fastfetch pdfarranger rclone kitty nvidia-settings"
+
+AurApps="banana-cursor bibata-cursor-theme brave-bin fuzzel-git gvim-git xnviewmp"
+
+echo "Spouštím instalaci, můžete zrušit CTRL+C ..."
+sleep 4
+sudo pacman -Syu
+echo "Instalace z repozitáře Arch"
+sudo pacman -S $PacmanApps &&
+echo "Instalace z repozitáře Aur"
+yay -S $AurApps &&
+echo "Instalace dokončena"
+sleep 4
+
+# Clone repo
+echo "Kopíruji konfiguraci z repozitáře"
+git clone --bare https://github.com/lrestj/plasmarch.git $HOME/.cfg.git &&
+git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
+echo "Konfigurace z repozitáře kompletní"
+echo -e "\n"
+sleep 4
+
+echo "Nastavení swap"
+echo vm.swappiness=10 | sudo tee /etc/sysctl.d/99-swappiness.conf
+echo -e "\n"
+
+#NFS mounts
+sudo cp /etc/fstab /etc/fstab.bak
+
+cd ~/.dotfiles/scripts/
+cat 3fstabnfs | sudo tee -a /etc/fstab
+echo -e "\n"
+
+echo "Připojení Nas Synology proběhlo úspěšně"
+echo "Soubor fstab nyní vypadá takto:"
+echo "-------------------------------------------------------------------------"
+echo -e "\n"
+cat /etc/fstab
+
+echo -e "\n"
+echo "-------------------------------------------------------------------------"
+
+#Nvidia prime
+echo "Nastavuji Nvidia prime"
+sleep 2
+nvidia-inst --prime
+
+#Git remote repos
+echo "Konfigurace Git repozitářů"
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote remove origin
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github git@github.com:lrestj/plasmarch.git
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add gitlab git@gitlab.com:lrestj/plasmarch.git
+git config --global user.email "rest@seznam.cz"
+git config --global user.name "LrestJ"
+echo "Remote repos added"
+echo -e "\n"
+sleep 4
+
+#$PATH
+echo "Add $HOME/.local/bin to $PATH"
+sleep 4
+EDITOR=vim sudoedit /etc/profile
+echo "KONEC INSTALACE" 
+
+##### END OF FILE #####

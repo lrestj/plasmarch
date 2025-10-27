@@ -1,0 +1,10 @@
+[terminal]
+vt = 1
+
+[initial_session]
+command = "sway-run"
+user = "libor"
+
+[default_session]
+command = "tuigreet -t -r --asterisks --remember-session --cmd sway-run"
+user = "greeter"
