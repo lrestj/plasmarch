@@ -17,6 +17,13 @@ LastSeen=2025,10,25
 [Application][org.kde.filelight.desktop]
 FirstSeen=2025,10,25
 
+[Application][pcmanfm-qt-desktop-pref.desktop]
+FirstSeen=2025,10,27
+LastSeen=2025,10,27
+
+[Application][pcmanfm-qt.desktop]
+LastSeen=2025,10,27
+
 [Application][xnviewmp.desktop]
 FirstSeen=2025,10,25
 
