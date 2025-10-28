@@ -135,14 +135,28 @@
 # Seznam skoků (počínaje nejnovější položkou):
 -'  2  0  ~/.config/gtk-4.0/settings.ini
 |4,39,2,0,1761644841,"~/.config/gtk-4.0/settings.ini"
+-'  2  0  ~/.config/gtk-4.0/settings.ini
+|4,39,2,0,1761644841,"~/.config/gtk-4.0/settings.ini"
 -'  14  0  ~/.dotfiles/other/stuff2remember.txt
 |4,39,14,0,1761644813,"~/.dotfiles/other/stuff2remember.txt"
+-'  14  0  ~/.dotfiles/other/stuff2remember.txt
+|4,39,14,0,1761644813,"~/.dotfiles/other/stuff2remember.txt"
+-'  1  0  ~/.dotfiles/other/stuff2remember.txt
+|4,39,1,0,1761644766,"~/.dotfiles/other/stuff2remember.txt"
 -'  1  0  ~/.dotfiles/other/stuff2remember.txt
 |4,39,1,0,1761644766,"~/.dotfiles/other/stuff2remember.txt"
 -'  4  41  ~/.local/share/applications/xnviewmp.desktop
 |4,39,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
 -'  4  41  ~/.local/share/applications/xnviewmp.desktop
 |4,39,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+-'  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,39,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+-'  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,39,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+-'  1  0  ~/.local/share/applications/xnviewmp.desktop
+|4,39,1,0,1761644493,"~/.local/share/applications/xnviewmp.desktop"
+-'  1  0  ~/.local/share/applications/xnviewmp.desktop
+|4,39,1,0,1761644493,"~/.local/share/applications/xnviewmp.desktop"
 -'  1  0  ~/.local/share/applications/xnviewmp.desktop
 |4,39,1,0,1761644493,"~/.local/share/applications/xnviewmp.desktop"
 -'  1  0  ~/.local/share/applications/xnviewmp.desktop
@@ -153,12 +167,28 @@
 |4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
 -'  3  167  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+-'  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+-'  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+-'  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
@@ -177,6 +207,24 @@
 |4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
 -'  14  26  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643521,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643521,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761643521,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
@@ -199,6 +247,28 @@
 |4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
 -'  5  73  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761642492,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761642492,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761642492,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
@@ -207,90 +277,18 @@
 |4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
 -'  5  79  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  79  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  79  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  25  168  ~/.config/fish/config.fish
-|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
 -'  25  168  ~/.config/fish/config.fish
 |4,39,25,168,1761597347,"~/.config/fish/config.fish"
 -'  25  168  ~/.config/fish/config.fish

@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.colorpicker
 
 [Containments][2][Applets][36][Configuration]
-PreloadWeight=65
+PreloadWeight=95
 popupHeight=324
 popupWidth=324
 
@@ -123,7 +123,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][2][Applets][36][Configuration][General]
-history=#4f2e0d
+history=#1c1c1c,#242222,#282828,#475b88,#4f2e0d
 
 [Containments][2][Applets][6]
 immutability=1
