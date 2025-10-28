@@ -62,5 +62,3 @@ BorderSize=Normal
 BorderSizeAuto=false
 ButtonsOnLeft=MFS
 ButtonsOnRight=HAI_X
-library=org.kde.breeze
-theme=Breeze

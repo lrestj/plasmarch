@@ -107,14 +107,14 @@ ForegroundVisited=100,74,155
 [General]
 AccentColor=0,0,0,0
 ColorScheme=OxygenDarkLibor
-ColorSchemeHash=06ef38f83fb56fa1a96f3fa773a5f3b67210513b
+ColorSchemeHash=a3cf3be35413dca242abf5c1b17a27b93f4c04bd
 LastUsedCustomAccentColor=104,107,111
 TerminalApplication=kitty -l
 TerminalService=kitty.desktop
 
 [KDE]
 AnimationDurationFactor=0
-LookAndFeelPackage=org.kde.klassykisweetdarkbottompanel.desktop
+LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
 SingleClick=true
 
