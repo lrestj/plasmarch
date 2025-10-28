@@ -1,8 +1,8 @@
 [General]
-ColorScheme=OxygenDarkLibor
+ColorScheme=KlassyDark
 
 [Icons]
-Theme=breeze-dark
+Theme=klassy-dark
 
 [KDE]
-widgetStyle=Breeze
+widgetStyle=Klassy

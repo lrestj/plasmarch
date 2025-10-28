@@ -12,7 +12,7 @@
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
 :wq
-|2,0,1761597347,,"wq"
+|2,0,1761642509,,"wq"
 :W
 |2,0,1761578930,,"W"
 :w
@@ -31,9 +31,9 @@
 # Historie Debug Line (počínaje nejnovější položkou):
 
 # Registry:
-""0	CHAR	0
+"0	CHAR	0
 	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push 
-|3,1,0,0,1,0,1761597295,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push "
+|3,0,0,0,1,0,1761597295,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push "
 "1	LINE	0
 	#NFS mounts
 	sudo cp /etc/fstab /etc/fstab.bak
@@ -115,41 +115,65 @@
 "9	LINE	0
 	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
 |3,0,9,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1761578870," "
+""-	CHAR	0
+	klassy 
+|3,1,36,0,1,0,1761642498,"klassy "
 
 # Souborové značky:
-'0  25  168  ~/.config/fish/config.fish
-|4,48,25,168,1761597347,"~/.config/fish/config.fish"
-'1  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,49,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
-'2  11  0  /var/tmp/fstab.cEJZg4fH
-|4,50,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
-'3  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,51,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
-'4  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,52,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
-'5  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,53,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
-'6  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,54,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
-'7  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,55,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
-'8  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,56,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
-'9  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,57,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
+'0  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,48,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+'1  5  79  ~/.dotfiles/scripts/plasmarch.inst
+|4,49,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
+'2  25  168  ~/.config/fish/config.fish
+|4,50,25,168,1761597347,"~/.config/fish/config.fish"
+'3  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,51,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+'4  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,52,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+'5  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,53,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+'6  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,54,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+'7  11  0  /var/tmp/fstab.cEJZg4fH
+|4,55,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+'8  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,56,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+'9  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,57,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761642492,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  79  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
 -'  25  168  ~/.config/fish/config.fish
 |4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761597268,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761597268,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1761597268,"~/.config/fish/config.fish"
 -'  1  0  ~/.config/fish/config.fish
 |4,39,1,0,1761597268,"~/.config/fish/config.fish"
 -'  29  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
 -'  29  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+-'  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
+-'  29  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761593791,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
@@ -162,6 +186,30 @@
 |4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
 -'  11  0  /var/tmp/fstab.cEJZg4fH
 |4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
+-'  11  0  /var/tmp/fstab.cEJZg4fH
+|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
 -'  12  0  /var/tmp/fstab.cEJZg4fH
 |4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
 -'  12  0  /var/tmp/fstab.cEJZg4fH
@@ -170,6 +218,54 @@
 |4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
 -'  12  0  /var/tmp/fstab.cEJZg4fH
 |4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  12  0  /var/tmp/fstab.cEJZg4fH
+|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
+-'  1  0  /var/tmp/fstab.cEJZg4fH
+|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
 -'  1  0  /var/tmp/fstab.cEJZg4fH
 |4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
 -'  1  0  /var/tmp/fstab.cEJZg4fH
@@ -194,156 +290,68 @@
 |4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
 -'  1  0  /run/media/libor/Ventoy/plasmarch.inst
 |4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+-'  1  0  /run/media/libor/Ventoy/plasmarch.inst
+|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
 -'  33  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
 -'  33  0  ~/.dotfiles/scripts/installeos.sh
 |4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761582141,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  3  91  ~/.dotfiles/scripts/installeos.sh
-|4,39,3,91,1761581236,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1761581192,"~/.dotfiles/scripts/installeos.sh"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
--'  3  21  ~/.config/kitty/kitty.conf
-|4,39,3,21,1761580855,"~/.config/kitty/kitty.conf"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
+
+> ~/.dotfiles/scripts/plasmarch.inst
+	*	1761642507	0
+	"	5	73
+	^	5	80
+	.	5	73
+	+	29	0
+	+	5	73
 
 > ~/.config/fish/config.fish
 	*	1761597344	0
@@ -358,12 +366,6 @@
 	+	25	89
 	+	27	0
 	+	25	168
-
-> ~/.dotfiles/scripts/plasmarch.inst
-	*	1761593805	0
-	"	29	0
-	.	29	0
-	+	29	0
 
 > /var/tmp/fstab.cEJZg4fH
 	*	1761593613	0
