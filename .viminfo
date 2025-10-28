@@ -12,7 +12,7 @@
 ~h
 # Historie příkazové řádky (počínaje nejnovější položkou):
 :wq
-|2,0,1761642509,,"wq"
+|2,0,1761644841,,"wq"
 :W
 |2,0,1761578930,,"W"
 :w
@@ -31,10 +31,21 @@
 # Historie Debug Line (počínaje nejnovější položkou):
 
 # Registry:
-"0	CHAR	0
-	git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push 
-|3,0,0,0,1,0,1761597295,"git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor push "
-"1	LINE	0
+"0	LINE	0
+	    [AdwStyleManager]
+	    color-scheme=ADW_COLOR_SCHEME_PREFER_DARK
+|3,0,0,1,2,0,1761644794,"    [AdwStyleManager]","    color-scheme=ADW_COLOR_SCHEME_PREFER_DARK"
+""1	LINE	0
+	gtk-application-prefer-dark-theme=true
+|3,1,1,1,1,0,1761644835,"gtk-application-prefer-dark-theme=true"
+"2	BLOCK	3
+	    
+	    
+|3,0,2,2,2,3,1761644830,"    ","    "
+"3	LINE	0
+	Comment=View and manage images
+|3,0,3,1,1,0,1761644522,"Comment=View and manage images"
+"4	LINE	0
 	#NFS mounts
 	sudo cp /etc/fstab /etc/fstab.bak
 	
@@ -51,20 +62,20 @@
 	echo -e "\n"
 	echo "-------------------------------------------------------------------------"
 	
-|3,0,1,1,16,0,1761593805,"#NFS mounts","sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
+|3,0,4,1,16,0,1761593805,"#NFS mounts","sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
 |<"echo \"-------------------------------------------------------------------------\"",""
-"2	LINE	0
+"5	LINE	0
 	# Synology nfs shares
 	192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs  users,noauto,hard 0 0
 	
 	192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,noauto,hard   0 0
 	
 	192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs  users,noauto,hard  0 0
-|3,0,2,1,6,0,1761593609,"# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs  users,noauto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,noauto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs  users,noauto,hard  0 0"
-"3	LINE	0
+|3,0,5,1,6,0,1761593609,"# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs  users,noauto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,noauto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs  users,noauto,hard  0 0"
+"6	LINE	0
 	font_family JetBrainsMono Nerd Font Mono
-|3,0,3,1,1,0,1761580547,"font_family JetBrainsMono Nerd Font Mono"
-"4	LINE	0
+|3,0,6,1,1,0,1761580547,"font_family JetBrainsMono Nerd Font Mono"
+"7	LINE	0
 	
 	##### END OF FILE #####
 	echo "Synology nfs shares"
@@ -78,8 +89,8 @@
 	echo -e "\n"
 	sleep 4
 	
-|3,0,4,1,13,0,1761579166,"","##### END OF FILE #####","echo \"Synology nfs shares\"","echo -e \"\\n\"","sudo mkdir /nfs &&","sudo chmod -R ugo+rwx /nfs","sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/","sudo systemctl enable autofs.service","echo -e \"\\n\"","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo -e \"\\n\"","sleep 4",""
-"5	LINE	0
+|3,0,7,1,13,0,1761579166,"","##### END OF FILE #####","echo \"Synology nfs shares\"","echo -e \"\\n\"","sudo mkdir /nfs &&","sudo chmod -R ugo+rwx /nfs","sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/","sudo systemctl enable autofs.service","echo -e \"\\n\"","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo -e \"\\n\"","sleep 4",""
+"8	LINE	0
 	
 	# Synology nfs shares
 	192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0
@@ -87,67 +98,117 @@
 	192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,auto,hard   0 0
 	
 	192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs   users,auto,hard  0 0
-|3,0,5,1,7,0,1761578993,"","# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,auto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs   users,auto,hard  0 0"
-"6	LINE	0
+|3,0,8,1,7,0,1761578993,"","# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,auto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs   users,auto,hard  0 0"
+"9	LINE	0
 	#Greetd greeter
 	echo "Nastavuji Greetd"
 	sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/
 	sudo systemctl enable greetd.service
 	
-|3,0,6,1,5,0,1761576211,"#Greetd greeter","echo \"Nastavuji Greetd\"","sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/","sudo systemctl enable greetd.service",""
-"7	BLOCK	7
-		
-		
-		
-		
-		
-		
-|3,0,7,2,6,7,1761517624,"	","	","	","	","	","	"
-"8	BLOCK	7
-		
-		
-		
-		
-		
-		
-		
-|3,0,8,2,7,7,1761517202,"	","	","	","	","	","	","	"
-"9	LINE	0
-	abbr gcl "git clone --bare https://codeberg.org/lrestj/nixos.git"
-|3,0,9,1,1,0,1761499551,"abbr gcl \"git clone --bare https://codeberg.org/lrestj/nixos.git\""
-""-	CHAR	0
-	klassy 
-|3,1,36,0,1,0,1761642498,"klassy "
+|3,0,9,1,5,0,1761576211,"#Greetd greeter","echo \"Nastavuji Greetd\"","sudo cp -f ~/.dotfiles/other/etc/greetd/* /etc/greetd/","sudo systemctl enable greetd.service",""
+"-	CHAR	0
+	/run/current-system/sw/bin/xnviewmp
+|3,0,36,0,1,0,1761644531,"/run/current-system/sw/bin/xnviewmp"
 
 # Souborové značky:
-'0  5  73  ~/.dotfiles/scripts/plasmarch.inst
-|4,48,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
-'1  5  79  ~/.dotfiles/scripts/plasmarch.inst
-|4,49,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
-'2  25  168  ~/.config/fish/config.fish
-|4,50,25,168,1761597347,"~/.config/fish/config.fish"
-'3  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,51,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
-'4  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,52,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
-'5  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,53,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
-'6  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,54,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
-'7  11  0  /var/tmp/fstab.cEJZg4fH
-|4,55,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
-'8  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,56,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
-'9  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,57,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
+'0  2  0  ~/.config/gtk-4.0/settings.ini
+|4,48,2,0,1761644841,"~/.config/gtk-4.0/settings.ini"
+'1  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,49,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+'2  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,50,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+'3  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,51,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+'4  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,52,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+'5  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,53,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+'6  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,54,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+'7  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,55,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+'8  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,56,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+'9  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,57,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  2  0  ~/.config/gtk-4.0/settings.ini
+|4,39,2,0,1761644841,"~/.config/gtk-4.0/settings.ini"
+-'  14  0  ~/.dotfiles/other/stuff2remember.txt
+|4,39,14,0,1761644813,"~/.dotfiles/other/stuff2remember.txt"
+-'  1  0  ~/.dotfiles/other/stuff2remember.txt
+|4,39,1,0,1761644766,"~/.dotfiles/other/stuff2remember.txt"
+-'  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,39,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+-'  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,39,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
+-'  1  0  ~/.local/share/applications/xnviewmp.desktop
+|4,39,1,0,1761644493,"~/.local/share/applications/xnviewmp.desktop"
+-'  1  0  ~/.local/share/applications/xnviewmp.desktop
+|4,39,1,0,1761644493,"~/.local/share/applications/xnviewmp.desktop"
+-'  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+-'  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+-'  3  167  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761644371,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643825,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  14  26  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,14,26,1761643574,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643521,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761643521,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  73  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
 -'  5  73  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,5,73,1761642509,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761642492,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761642492,"~/.dotfiles/scripts/plasmarch.inst"
 -'  5  79  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
+-'  5  79  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,5,79,1761641232,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761641195,"~/.dotfiles/scripts/plasmarch.inst"
 -'  25  168  ~/.config/fish/config.fish
@@ -158,200 +219,155 @@
 |4,39,25,168,1761597347,"~/.config/fish/config.fish"
 -'  25  168  ~/.config/fish/config.fish
 |4,39,25,168,1761597347,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761597268,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761597268,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761597268,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1761597268,"~/.config/fish/config.fish"
--'  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
--'  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
--'  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
--'  29  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,39,29,0,1761593809,"~/.dotfiles/scripts/plasmarch.inst"
--'  1  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,39,1,0,1761593791,"~/.dotfiles/scripts/plasmarch.inst"
--'  1  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,39,1,0,1761593791,"~/.dotfiles/scripts/plasmarch.inst"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  11  0  /var/tmp/fstab.cEJZg4fH
-|4,39,11,0,1761593617,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  12  0  /var/tmp/fstab.cEJZg4fH
-|4,39,12,0,1761593605,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /var/tmp/fstab.cEJZg4fH
-|4,39,1,0,1761593597,"/var/tmp/fstab.cEJZg4fH"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  1  0  /run/media/libor/Ventoy/plasmarch.inst
-|4,39,1,0,1761582277,"/run/media/libor/Ventoy/plasmarch.inst"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
--'  33  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,33,0,1761582159,"~/.dotfiles/scripts/installeos.sh"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
+-'  25  168  ~/.config/fish/config.fish
+|4,39,25,168,1761597347,"~/.config/fish/config.fish"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
 
+> ~/.config/gtk-4.0/settings.ini
+	*	1761644837	0
+	"	2	0
+	^	13	0
+	.	2	0
+	+	13	0
+	+	14	0
+	+	2	0
+
+> ~/.dotfiles/other/stuff2remember.txt
+	*	1761644794	0
+	"	14	0
+
+> ~/.local/share/applications/xnviewmp.desktop
+	*	1761644682	0
+	"	4	41
+	^	4	42
+	.	4	41
+	+	2	6
+	+	9	0
+	+	2	9
+	+	3	9
+	+	4	41
+
 > ~/.dotfiles/scripts/plasmarch.inst
-	*	1761642507	0
-	"	5	73
-	^	5	80
-	.	5	73
+	*	1761644396	0
+	"	3	167
+	^	3	168
+	.	3	167
 	+	29	0
 	+	5	73
+	+	3	167
 
 > ~/.config/fish/config.fish
 	*	1761597344	0

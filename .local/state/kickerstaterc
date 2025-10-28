@@ -1,4 +1,4 @@
-InstalledApps=org.kde.gwenview.desktop,org.kde.okular.desktop,org.gnome.SimpleScan.desktop,xnviewmp.desktop,brave-browser.desktop,org.kde.kdeconnect.sms.desktop,org.kde.kdeconnect.app.desktop,bssh.desktop,bvnc.desktop,org.kde.okular.desktop,org.kde.haruna.desktop,mpv.desktop,org.pulseaudio.pavucontrol.desktop,qv4l2.desktop,qvidcap.desktop,org.kde.kinfocenter.desktop,assistant.desktop,org.kde.ark.desktop,org.kde.filelight.desktop,gvim.desktop,hplip.desktop,org.kde.kate.desktop,org.kde.kcalc.desktop,org.kde.kwrite.desktop,org.kde.plasma.emojier.desktop,stoken-gui-small.desktop,stoken-gui.desktop,org.kde.spectacle.desktop,yazi.desktop,ytDownloader.desktop,firewall-config.desktop,btop.desktop,org.kde.dolphin.desktop,org.kde.kmenuedit.desktop,eos-apps-info.desktop,eos-log-tool.desktop,eos-quickstart.desktop,eos-update.desktop,lstopo.desktop,org.kde.kinfocenter.desktop,kitty.desktop,org.kde.konsole.desktop,org.kde.plasma-systemmonitor.desktop,systemsettings.desktop,nvidia-settings.desktop,org.pulseaudio.pavucontrol.desktop,avahi-discover.desktop,reflector-simple.desktop,cups.desktop,uxterm.desktop,welcome.desktop,xterm.desktop,yad-settings.desktop,yazi.desktop,cmake-gui.desktop,yad-icon-browser.desktop,org.kde.kate.desktop,org.gnome.Meld.desktop,assistant.desktop,qdbusviewer.desktop,linguist.desktop,designer.desktop,hp-uiscan.desktop,vim.desktop
+InstalledApps=org.kde.gwenview.desktop,org.kde.okular.desktop,org.gnome.SimpleScan.desktop,xnviewmp.desktop,brave-browser.desktop,org.kde.kdeconnect.sms.desktop,org.kde.kdeconnect.app.desktop,bssh.desktop,bvnc.desktop,org.kde.okular.desktop,org.kde.haruna.desktop,mpv.desktop,org.pulseaudio.pavucontrol.desktop,qv4l2.desktop,qvidcap.desktop,org.kde.kinfocenter.desktop,assistant.desktop,org.kde.ark.desktop,org.kde.filelight.desktop,gvim.desktop,hplip.desktop,org.kde.kate.desktop,org.kde.kcalc.desktop,org.kde.kwrite.desktop,org.kde.plasma.emojier.desktop,stoken-gui-small.desktop,stoken-gui.desktop,org.kde.spectacle.desktop,yazi.desktop,ytDownloader.desktop,firewall-config.desktop,btop.desktop,org.kde.dolphin.desktop,org.kde.kmenuedit.desktop,eos-apps-info.desktop,eos-log-tool.desktop,eos-quickstart.desktop,eos-update.desktop,lstopo.desktop,org.kde.kinfocenter.desktop,kitty.desktop,org.kde.konsole.desktop,org.kde.plasma-systemmonitor.desktop,systemsettings.desktop,nvidia-settings.desktop,org.pulseaudio.pavucontrol.desktop,avahi-discover.desktop,reflector-simple.desktop,cups.desktop,uxterm.desktop,welcome.desktop,xterm.desktop,yad-settings.desktop,yazi.desktop,cmake-gui.desktop,yad-icon-browser.desktop,org.kde.kate.desktop,org.gnome.Meld.desktop,assistant.desktop,qdbusviewer.desktop,linguist.desktop,designer.desktop,hp-uiscan.desktop,xeyes.desktop
 
 [Application][cmake-gui.desktop]
 FirstSeen=2025,10,28
@@ -16,3 +16,17 @@ LastSeen=2025,10,27
 
 [Application][pcmanfm-qt.desktop]
 LastSeen=2025,10,27
+
+[Application][vim.desktop]
+LastSeen=2025,10,28
+
+[Application][vim_1.desktop]
+FirstSeen=2025,10,28
+LastSeen=2025,10,28
+
+[Application][wl-color-picker.desktop]
+FirstSeen=2025,10,28
+LastSeen=2025,10,28
+
+[Application][xeyes.desktop]
+FirstSeen=2025,10,28
