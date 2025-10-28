@@ -64,10 +64,6 @@ popupWidth=560
 [Containments][2][Applets][21][Configuration][Appearance]
 fontWeight=400
 
-[Containments][2][Applets][22]
-immutability=1
-plugin=org.kde.plasma.showdesktop
-
 [Containments][2][Applets][26]
 immutability=1
 plugin=org.kde.plasma.activitypager
@@ -113,6 +109,22 @@ DialogWidth=810
 [Containments][2][Applets][35][Configuration][General]
 displayedText=Number
 
+[Containments][2][Applets][36]
+immutability=1
+plugin=org.kde.plasma.colorpicker
+
+[Containments][2][Applets][36][Configuration]
+PreloadWeight=65
+popupHeight=324
+popupWidth=324
+
+[Containments][2][Applets][36][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][2][Applets][36][Configuration][General]
+history=#4f2e0d
+
 [Containments][2][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -141,7 +153,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][2][Applets][7][Applets][12][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][2][Applets][7][Applets][13]
 immutability=1
@@ -195,7 +207,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][2][Applets][7][Applets][23][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][2][Applets][7][Applets][24]
 immutability=1
@@ -219,12 +231,16 @@ plugin=org.kde.plasma.cameraindicator
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
 
+[Containments][2][Applets][7][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][2][Applets][7][General]
 extraItems=org.kde.plasma.cameraindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard,org.kde.plasma.weather,org.kde.plasma.devicenotifier,org.kde.plasma.brightness,org.kde.plasma.mediacontroller,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.volume
 knownItems=org.kde.plasma.cameraindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard,org.kde.plasma.weather,org.kde.plasma.devicenotifier,org.kde.plasma.brightness,org.kde.plasma.mediacontroller,org.kde.kscreen,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.volume
 
 [Containments][2][General]
-AppletOrder=3;26;35;31;6;7;21;22
+AppletOrder=3;26;35;31;6;7;36;21
 
 [ScreenMapping]
 itemsOnDisabledScreens=

@@ -31,3 +31,4 @@ plasmarch/
 .local/state/wireplumber/
 .local/state/xdg-desktop-portal-kdestaterc
 .local/state/plasmasessionrestorestaterc
+.local/share/Trash/
