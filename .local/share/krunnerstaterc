@@ -1,5 +1,5 @@
 [PlasmaRunnerManager]
-LaunchCounts=1 exec:///usr/bin/simple-scan,1 krunner_systemsettings_kcm_keys,1 exec:///usr/bin/brave,1 krunner_webshortcuts_https://duckduckgo.com/?q=klipper&t=kde
+LaunchCounts=1 exec:///usr/bin/simple-scan,1 krunner_systemsettings_kcm_keys,1 exec:///usr/bin/brave,1 krunner_webshortcuts_https://duckduckgo.com/?q=klipper&t=kde,1 exec:///usr/bin/plasma-systemmonitor
 
 [PlasmaRunnerManager][History]
-8c559d5c-7cfd-4201-aead-7550e8854440=klipper,bra,sken,zkra
+8c559d5c-7cfd-4201-aead-7550e8854440=monit,klipper,bra,sken,zkra

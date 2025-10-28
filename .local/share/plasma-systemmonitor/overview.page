@@ -93,6 +93,7 @@ showLegend=false
 Title=Přehled
 actionsFace=
 icon=speedometer
+loadType=
 margin=2
 version=1
 
