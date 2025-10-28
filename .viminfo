@@ -15,7 +15,7 @@
 
 # Historie příkazové řádky (počínaje nejnovější položkou):
 :wq
-|2,0,1761653179,,"wq"
+|2,0,1761658719,,"wq"
 :W
 |2,0,1761578930,,"W"
 :w
@@ -41,6 +41,24 @@
 	    color-scheme=ADW_COLOR_SCHEME_PREFER_DARK
 |3,0,0,1,2,0,1761644794,"    [AdwStyleManager]","    color-scheme=ADW_COLOR_SCHEME_PREFER_DARK"
 ""1	LINE	0
+	mountpoint -q /nfs/FilmyNas || sudo mount -t nfs 192.168.77.18:/volume1/Filmy /nfs/FilmyNas
+|3,1,1,1,1,0,1761658701,"mountpoint -q /nfs/FilmyNas || sudo mount -t nfs 192.168.77.18:/volume1/Filmy /nfs/FilmyNas"
+"2	LINE	0
+	
+|3,0,2,1,1,0,1761658701,""
+"3	LINE	0
+	mountpoint -q /nfs/HudbaNas || sudo mount -t nfs 192.168.77.18:/volume1/Hudba /nfs/HudbaNas
+|3,0,3,1,1,0,1761658700,"mountpoint -q /nfs/HudbaNas || sudo mount -t nfs 192.168.77.18:/volume1/Hudba /nfs/HudbaNas"
+"4	LINE	0
+	
+|3,0,4,1,1,0,1761658700,""
+"5	LINE	0
+	
+	192.168.77.18:/volume1/Hudba   /nfs/HudbaNas  nfs  users,noauto,hard   0 0
+	
+	192.168.77.18:/volume1/Filmy   /nfs/FilmyNas  nfs  users,noauto,hard  0 0
+|3,0,5,1,4,0,1761658275,"","192.168.77.18:/volume1/Hudba   /nfs/HudbaNas  nfs  users,noauto,hard   0 0","","192.168.77.18:/volume1/Filmy   /nfs/FilmyNas  nfs  users,noauto,hard  0 0"
+"6	LINE	0
 	#sudo apt install nfs-common
 	
 	sudo systemctl enable --now nfs-client.target
@@ -53,105 +71,97 @@
 	sudo showmount -e 192.168.77.18
 	
 	
-|3,1,1,1,12,0,1761652341,"#sudo apt install nfs-common","","sudo systemctl enable --now nfs-client.target","","sudo systemctl enable --now NetworkManager-wait-online.service","","","#Ověřit:","","sudo showmount -e 192.168.77.18","",""
-"2	LINE	0
+|3,0,6,1,12,0,1761652341,"#sudo apt install nfs-common","","sudo systemctl enable --now nfs-client.target","","sudo systemctl enable --now NetworkManager-wait-online.service","","","#Ověřit:","","sudo showmount -e 192.168.77.18","",""
+"7	LINE	0
 	sudo mount -t nfs 192.168.77.18:/volume1/Rodinas /data/nfs/Nas
 	
 	sudo mount -t nfs 192.168.77.18:/volume1/Hudba /data/nfs/HudbaNas
 	
 	sudo mount -t nfs 192.168.77.18:/volume1/Filmy /data/nfs/FilmyNas
 	
-|3,0,2,1,6,0,1761652307,"sudo mount -t nfs 192.168.77.18:/volume1/Rodinas /data/nfs/Nas","","sudo mount -t nfs 192.168.77.18:/volume1/Hudba /data/nfs/HudbaNas","","sudo mount -t nfs 192.168.77.18:/volume1/Filmy /data/nfs/FilmyNas",""
-"3	LINE	0
-	gtk-application-prefer-dark-theme=true
-|3,0,3,1,1,0,1761644835,"gtk-application-prefer-dark-theme=true"
-"4	BLOCK	3
-	    
-	    
-|3,0,4,2,2,3,1761644830,"    ","    "
-"5	LINE	0
-	Comment=View and manage images
-|3,0,5,1,1,0,1761644522,"Comment=View and manage images"
-"6	LINE	0
-	#NFS mounts
-	sudo cp /etc/fstab /etc/fstab.bak
-	
-	cd ~/.dotfiles/scripts/
-	cat 3fstabnfs | sudo tee -a /etc/fstab
-	echo -e "\n"
-	
-	echo "Připojení Nas Synology proběhlo úspěšně"
-	echo "Soubor fstab nyní vypadá takto:"
-	echo "-------------------------------------------------------------------------"
-	echo -e "\n"
-	cat /etc/fstab
-	
-	echo -e "\n"
-	echo "-------------------------------------------------------------------------"
-	
-|3,0,6,1,16,0,1761593805,"#NFS mounts","sudo cp /etc/fstab /etc/fstab.bak","","cd ~/.dotfiles/scripts/","cat 3fstabnfs | sudo tee -a /etc/fstab","echo -e \"\\n\"","","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo \"Soubor fstab nyní vypadá takto:\"","echo \"-------------------------------------------------------------------------\"","echo -e \"\\n\"","cat /etc/fstab","","echo -e \"\\n\"",>84
-|<"echo \"-------------------------------------------------------------------------\"",""
-"7	LINE	0
-	# Synology nfs shares
-	192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs  users,noauto,hard 0 0
-	
-	192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,noauto,hard   0 0
-	
-	192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs  users,noauto,hard  0 0
-|3,0,7,1,6,0,1761593609,"# Synology nfs shares","192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs  users,noauto,hard 0 0","","192.168.77.18:/volume1/Hudba   /data/nfs/HudbaNas  nfs  users,noauto,hard   0 0","","192.168.77.18:/volume1/Filmy   /data/nfs/FilmyNas  nfs  users,noauto,hard  0 0"
+|3,0,7,1,6,0,1761652307,"sudo mount -t nfs 192.168.77.18:/volume1/Rodinas /data/nfs/Nas","","sudo mount -t nfs 192.168.77.18:/volume1/Hudba /data/nfs/HudbaNas","","sudo mount -t nfs 192.168.77.18:/volume1/Filmy /data/nfs/FilmyNas",""
 "8	LINE	0
-	font_family JetBrainsMono Nerd Font Mono
-|3,0,8,1,1,0,1761580547,"font_family JetBrainsMono Nerd Font Mono"
-"9	LINE	0
-	
-	##### END OF FILE #####
-	echo "Synology nfs shares"
-	echo -e "\n"
-	sudo mkdir /nfs &&
-	sudo chmod -R ugo+rwx /nfs
-	sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/
-	sudo systemctl enable autofs.service
-	echo -e "\n"
-	echo "Připojení Nas Synology proběhlo úspěšně"
-	echo -e "\n"
-	sleep 4
-	
-|3,0,9,1,13,0,1761579166,"","##### END OF FILE #####","echo \"Synology nfs shares\"","echo -e \"\\n\"","sudo mkdir /nfs &&","sudo chmod -R ugo+rwx /nfs","sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/","sudo systemctl enable autofs.service","echo -e \"\\n\"","echo \"Připojení Nas Synology proběhlo úspěšně\"","echo -e \"\\n\"","sleep 4",""
+	gtk-application-prefer-dark-theme=true
+|3,0,8,1,1,0,1761644835,"gtk-application-prefer-dark-theme=true"
+"9	BLOCK	3
+	    
+	    
+|3,0,9,2,2,3,1761644830,"    ","    "
 "-	CHAR	0
 	/run/current-system/sw/bin/xnviewmp
 |3,0,36,0,1,0,1761644531,"/run/current-system/sw/bin/xnviewmp"
 
 # Souborové značky:
-'0  174  37  ~/.config/yazi/keymap.toml
-|4,48,174,37,1761653179,"~/.config/yazi/keymap.toml"
-'1  1  0  ~/.dotfiles/scripts/plasmarch.inst
-|4,49,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
-'2  8  29  ~/.dotfiles/scripts/3fstabnfs
-|4,50,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
-'3  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
-|4,51,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
-'4  17  30  /var/tmp/fstab.5moKZa2H
-|4,52,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
-'5  12  0  /var/tmp/fstab.1JLfTChc
-|4,53,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
-'6  2  0  ~/.config/gtk-4.0/settings.ini
-|4,54,2,0,1761644841,"~/.config/gtk-4.0/settings.ini"
-'7  4  41  ~/.local/share/applications/xnviewmp.desktop
-|4,55,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
-'8  4  41  ~/.local/share/applications/xnviewmp.desktop
-|4,56,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
-'9  3  167  ~/.dotfiles/scripts/plasmarch.inst
-|4,57,3,167,1761644401,"~/.dotfiles/scripts/plasmarch.inst"
+'0  5  0  ~/.local/bin/nfsmount
+|4,48,5,0,1761658719,"~/.local/bin/nfsmount"
+'1  13  29  /var/tmp/fstab.xV0gatNA
+|4,49,13,29,1761658281,"/var/tmp/fstab.xV0gatNA"
+'2  174  37  ~/.config/yazi/keymap.toml
+|4,50,174,37,1761653179,"~/.config/yazi/keymap.toml"
+'3  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,51,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+'4  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,52,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+'5  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,53,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+'6  17  30  /var/tmp/fstab.5moKZa2H
+|4,54,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
+'7  12  0  /var/tmp/fstab.1JLfTChc
+|4,55,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
+'8  2  0  ~/.config/gtk-4.0/settings.ini
+|4,56,2,0,1761644841,"~/.config/gtk-4.0/settings.ini"
+'9  4  41  ~/.local/share/applications/xnviewmp.desktop
+|4,57,4,41,1761644684,"~/.local/share/applications/xnviewmp.desktop"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  5  0  ~/.local/bin/nfsmount
+|4,39,5,0,1761658719,"~/.local/bin/nfsmount"
+-'  1  0  ~/.local/bin/nfsmount
+|4,39,1,0,1761658677,"~/.local/bin/nfsmount"
+-'  13  29  /var/tmp/fstab.xV0gatNA
+|4,39,13,29,1761658281,"/var/tmp/fstab.xV0gatNA"
+-'  13  29  /var/tmp/fstab.xV0gatNA
+|4,39,13,29,1761658281,"/var/tmp/fstab.xV0gatNA"
+-'  14  0  /var/tmp/fstab.xV0gatNA
+|4,39,14,0,1761658273,"/var/tmp/fstab.xV0gatNA"
+-'  14  0  /var/tmp/fstab.xV0gatNA
+|4,39,14,0,1761658273,"/var/tmp/fstab.xV0gatNA"
+-'  1  0  /var/tmp/fstab.xV0gatNA
+|4,39,1,0,1761658250,"/var/tmp/fstab.xV0gatNA"
+-'  1  0  /var/tmp/fstab.xV0gatNA
+|4,39,1,0,1761658250,"/var/tmp/fstab.xV0gatNA"
 -'  174  37  ~/.config/yazi/keymap.toml
 |4,39,174,37,1761653179,"~/.config/yazi/keymap.toml"
+-'  174  37  ~/.config/yazi/keymap.toml
+|4,39,174,37,1761653179,"~/.config/yazi/keymap.toml"
+-'  174  37  ~/.config/yazi/keymap.toml
+|4,39,174,37,1761653179,"~/.config/yazi/keymap.toml"
+-'  174  37  ~/.config/yazi/keymap.toml
+|4,39,174,37,1761653179,"~/.config/yazi/keymap.toml"
+-'  1  0  ~/.config/yazi/keymap.toml
+|4,39,1,0,1761653167,"~/.config/yazi/keymap.toml"
+-'  1  0  ~/.config/yazi/keymap.toml
+|4,39,1,0,1761653167,"~/.config/yazi/keymap.toml"
+-'  1  0  ~/.config/yazi/keymap.toml
+|4,39,1,0,1761653167,"~/.config/yazi/keymap.toml"
 -'  1  0  ~/.config/yazi/keymap.toml
 |4,39,1,0,1761653167,"~/.config/yazi/keymap.toml"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
 -'  1  0  ~/.dotfiles/scripts/plasmarch.inst
 |4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
+-'  1  0  ~/.dotfiles/scripts/plasmarch.inst
+|4,39,1,0,1761652794,"~/.dotfiles/scripts/plasmarch.inst"
 -'  8  29  ~/.dotfiles/scripts/3fstabnfs
 |4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
 -'  8  29  ~/.dotfiles/scripts/3fstabnfs
@@ -160,6 +170,54 @@
 |4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
 -'  8  29  ~/.dotfiles/scripts/3fstabnfs
 |4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  8  29  ~/.dotfiles/scripts/3fstabnfs
+|4,39,8,29,1761652426,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
+-'  1  0  ~/.dotfiles/scripts/3fstabnfs
+|4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
 -'  1  0  ~/.dotfiles/scripts/3fstabnfs
 |4,39,1,0,1761652396,"~/.dotfiles/scripts/3fstabnfs"
 -'  1  0  ~/.dotfiles/scripts/3fstabnfs
@@ -184,6 +242,54 @@
 |4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
 -'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
 |4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  4  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,4,0,1761652394,"~/.dotfiles/scripts/2nfs mounts.sh"
 -'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
 |4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
 -'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
@@ -200,152 +306,30 @@
 |4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
 -'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
 |4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  17  30  /var/tmp/fstab.5moKZa2H
-|4,39,17,30,1761651798,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  1  0  /var/tmp/fstab.5moKZa2H
-|4,39,1,0,1761651734,"/var/tmp/fstab.5moKZa2H"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  12  0  /var/tmp/fstab.1JLfTChc
-|4,39,12,0,1761651490,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
--'  1  0  /var/tmp/fstab.1JLfTChc
-|4,39,1,0,1761651471,"/var/tmp/fstab.1JLfTChc"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
+-'  1  0  ~/.dotfiles/scripts/2nfs mounts.sh
+|4,39,1,0,1761652243,"~/.dotfiles/scripts/2nfs mounts.sh"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
+
+> ~/.local/bin/nfsmount
+	*	1761658701	0
+	"	5	0
+	.	5	0
+	+	4	67
+	+	5	0
+
+> /var/tmp/fstab.xV0gatNA
+	*	1761658279	0
+	"	13	29
+	.	14	0
+	+	13	23
+	+	14	0
 
 > ~/.config/yazi/keymap.toml
 	*	1761653177	0

@@ -1,14 +1,10 @@
 #KLIENT NASTAVENÍ:
 #!/bin/bash
 
-sudo mkdir -p /data/nfs/FilmyNas /data/nfs/HudbaNas /data/nfs/Nas &&
+mountpoint -q /nfs/Nas || sudo mount -t nfs 192.168.77.18:/volume1/Rodinas /nfs/Nas
 
-sudo chmod -R ugo+rwx /data/nfs
+mountpoint -q /nfs/HudbaNas || sudo mount -t nfs 192.168.77.18:/volume1/Hudba /nfs/HudbaNas
 
-sudo mount -t nfs 192.168.77.18:/volume1/Rodinas /data/nfs/Nas
-
-sudo mount -t nfs 192.168.77.18:/volume1/Hudba /data/nfs/HudbaNas
-
-sudo mount -t nfs 192.168.77.18:/volume1/Filmy /data/nfs/FilmyNas
+mountpoint -q /nfs/FilmyNas || sudo mount -t nfs 192.168.77.18:/volume1/Filmy /nfs/FilmyNas
 
 ##### END OF FILE #####
