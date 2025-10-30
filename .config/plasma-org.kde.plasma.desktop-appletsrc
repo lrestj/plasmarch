@@ -96,7 +96,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][2][Applets][31][Configuration][General]
-launchers=preferred://filemanager,applications:org.kde.kcalc.desktop,applications:kitty.desktop,applications:brave-browser.desktop,applications:org.kde.kwrite.desktop
+launchers=applications:pcmanfm-qt.desktop,applications:org.kde.kcalc.desktop,applications:kitty.desktop,applications:brave-browser.desktop,applications:org.kde.kwrite.desktop
 
 [Containments][2][Applets][35]
 immutability=1
@@ -221,7 +221,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][2][Applets][7][Applets][25][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 
 [Containments][2][Applets][7][Applets][8]
 immutability=1
